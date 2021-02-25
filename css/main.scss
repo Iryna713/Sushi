@@ -1,0 +1,22 @@
+.main {
+  &__header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-family: 'PTSans-Regular', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__catalog {
+    display: flex;
+    margin: 50px 0;
+  }
+
+  &__card {
+    margin-right: 15px;
+  }
+}

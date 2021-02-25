@@ -1,0 +1,8 @@
+$height: 75px;
+
+.footer {
+  &__text {
+    text-align: center;
+    line-height: $height;
+  }
+}

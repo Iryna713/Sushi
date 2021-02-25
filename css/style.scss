@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'header';
+@import 'main';
+@import 'gallery';
+@import 'nav';
+@import 'card';
+@import 'footer';
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url(../fonts/PTSans-Bold.woff) format('woff'),
+       url(../fonts/PTSans-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url(../fonts/PTSans-Regular.woff) format('woff'),
+       url(../fonts/PTSans-Regular.woff2) format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'PTSans-Bold', sans-serif;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.body {
+  &__header {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,36 @@
+.gallery {
+  background-color: #6dcff6;
+  padding: 70px;
+
+  &__img {
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 60px;
+
+    img {
+      position: absolute;
+    }
+
+    &-second {
+      opacity: 0;
+    }
+
+    &-third {
+      opacity: 0;
+    }
+  }
+
+  &__header {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    width: 330px;
+    margin: 0 auto;
+  }
+}

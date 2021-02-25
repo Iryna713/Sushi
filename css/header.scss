@@ -1,0 +1,33 @@
+.header {
+  background-color: #0072bc;
+
+  &__wrapper {
+    height: 117px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__span {
+    margin-left: 15px;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &__btn {
+    background-color: #f26522;
+    outline: none;
+    border: none;
+    height: 60px;
+    width: 250px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
