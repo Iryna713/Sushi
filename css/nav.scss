@@ -9,6 +9,10 @@
 
   &__arrow {
     height: 30px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   &__dot {
@@ -16,5 +20,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
   }
 }

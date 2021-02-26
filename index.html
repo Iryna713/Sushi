@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi-shmaster</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/лого.png">
+    <link rel="icon" href="images/logo.webp">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   </head>
 
@@ -15,7 +15,7 @@
     <header class="header body__header">
       <div class="wrapper header__wrapper">
         <a href="#" class="header__link">
-          <img src="images/logo.webp" alt="logo">
+          <img src="images/logo.webp" alt="logo" class="header__logo">
           <span class="header__span">Суши-шмастер</span>
         </a>
   
@@ -35,13 +35,13 @@
           за последние полгода работы на карантине
         </p>
   
-        <h2>
+        <h2 class="main__subtitle">
           Актуальные позиции
         </h2>
   
         <section class="main__catalog">
           <div class="card main__card">
-            <img src="images/1.webp" alt="">
+            <img src="images/1.webp" alt="Гринобль ролл">
             <h3>Гринобль ролл</h3>
             <p class="card__text">
               Закажи сей вкусный ролл,<br>
@@ -53,7 +53,7 @@
           </div>
   
           <div class="card main__card">
-            <img src="images/2.webp" alt="">
+            <img src="images/2.webp" alt="Орандж ролл">
             <h3>Орандж ролл</h3>
             <p class="card__text">
               Закажи сей вкусный ролл,<br>
@@ -65,7 +65,7 @@
           </div>
   
           <div class="card main__card">
-            <img src="images/3.webp" alt="">
+            <img src="images/3.webp" alt="Брауни ролл">
             <h3>Брауни ролл</h3>
             <p class="card__text">
               Закажи сей вкусный ролл,<br>
@@ -76,36 +76,55 @@
             <button type="button" class="card__btn">Недоступно к заказу</button>
           </div>
   
-          <div>
-            <img src="images/4.webp" alt="">
+          <div class="main__cardImg">
+            <img src="images/4.webp" alt="Синергетический и Скарбовский сеты">
           </div>
         </section>
       </div>
 
-      <div class="gallery footer__gallery">
+      <div class="gallery main__gallery">
         <h2 class="gallery__header">
           Самые выгодные предложения:
         </h2>
         
         <div class="gallery__img">
-          <img src="images/shrimps.webp" class="gallery__img-first" alt="Самые лучшие креветки!А в подарок вам салфетки!">
-          <img src="images/doradoFish.webp" class="gallery__img-second" alt="Дорадо у нас как феромоны. Получи к нему лимоны!">
-          <img src="images/herring.webp" class="gallery__img-third" alt="Закажи у нас селедку! Получи в подарок водку!">
+          <img
+            src="images/shrimps.webp"
+            class="gallery__img-first"
+            alt="Самые лучшие креветки!А в подарок вам салфетки!"
+          >
+          <img
+            src="images/doradoFish.webp"
+            class="gallery__img-second"
+            alt="Дорадо у нас как феромоны. Получи к нему лимоны!"
+          >
+          <img
+            src="images/herring.webp"
+            class="gallery__img-third"
+            alt="Закажи у нас селедку! Получи в подарок водку!"
+          >
         </div>
 
         <div class="nav gallery__nav">
-          <a href="#" class="nav__arrow"><img src="images/leftArrow.png" alt=""></a>
-          <div class="nav__dot"></div>
-          <div class="nav__dot"></div>
-          <div class="nav__dot"></div>
-          <a href="#" class="nav__arrow"><img src="images/rightArrow.png" alt=""></a>
+          <button type="button" class="nav__arrow" onclick="prev()">
+            <img src="images/leftArrow.webp" alt="Назад">
+          </button>
+          <button type="button" class="nav__dot" onclick="slideEffect('first')"></button>
+          <button type="button" class="nav__dot" onclick="slideEffect('second')"></button>
+          <button type="button" class="nav__dot" onclick="slideEffect('third')"></button>
+          <button type="button" class="nav__arrow" onclick="next()">
+            <img src="images/rightArrow.webp" alt="Вперед">
+          </button>
         </div>
       </div>
     </main>
       
     <footer class="footer body__footer">
-        <p class="footer__text">Copyright 2021</p>
+        <p class="footer__text">Copyright </p>
     </footer>
+
+    <script src="js/api.js"></script>
+
   </body>
 
 </html>

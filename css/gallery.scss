@@ -1,16 +1,41 @@
 .gallery {
   background-color: #6dcff6;
-  padding: 70px;
+  padding: 40px 0;
+  // height: 700px;
+
+  @media only screen and (min-width: 992px) {
+    padding: 70px 0;
+  }
 
   &__img {
-    margin: 0 auto;
-    width: 900px;
-    height: 300px;
+    margin: 0 auto 30px;
+    width: 90%;
+    height: 200px;
     position: relative;
-    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (min-width: 660px) {
+      height: 300px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: 900px;
+      height: 300px;
+      margin-bottom: 60px;
+    }
 
     img {
       position: absolute;
+      width: 100%;
+      display: block;
+      // height: 300px;
+      // margin-bottom: 30px;
+    
+      @media only screen and (min-width: 992px) {
+        width: 900px;
+        height: 300px;
+      }
     }
 
     &-second {
@@ -27,10 +52,19 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 60px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
   }
 
   &__nav {
     width: 330px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 475px) {
+      width: 300px;
+    }
   }
 }
